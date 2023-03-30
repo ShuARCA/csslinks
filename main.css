@@ -87,5 +87,5 @@ div[tabindex="0"] > div:nth-child(3) > div > .MuiSlider-root {
 ********************/
 
 .MuiPaper-elevation24 > header > div:nth-child(2) > div.MuiTabs-scrollable  > div > button {
-    min-width: 125px　;
+    min-width: 125px !important;
 }
