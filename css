@@ -1,0 +1,79 @@
+/*******************
+キャラクター
+********************/
+
+/*チャパレ*/
+div.MuiDialogContent-root > form > div:nth-child(5) > div.MuiFormControl-root.MuiTextField-root.MuiFormControl-marginDense.MuiFormControl-fullWidth > div > textarea {
+    height: 400px;
+}
+/*説明文*/
+div.MuiDialogContent-root > form > div:nth-child(n) > span {
+    display: none;
+}
+/*キャラクターメモ*/
+div.MuiDialogContent-root > form > div:nth-child(1) > div.MuiFormControl-root.MuiTextField-root.MuiFormControl-marginDense.MuiFormControl-fullWidth > div > textarea {
+    height: 120px;
+}
+/*余白*/
+div.MuiDialogContent-root > form > div:nth-child(n+3):nth-child(-n+4) > div:nth-child(n) {
+    height: 38px;
+}
+div.MuiDialogContent-root > form > div:nth-child(n+3):nth-child(-n+4) > div:nth-child(n) > div:nth-child(n) > label {
+    display: none;
+}
+div.MuiDialogContent-root > form > div:nth-child(n) > div.MuiToolbar-root.MuiToolbar-dense {
+    min-height: 0px;
+    height: 10px;
+}
+div.MuiDialogContent-root > form > div:nth-child(n) {
+    margin-top: 0px;
+    margin-bottom: 40px;
+}
+
+
+/*******************
+シーン一覧
+********************/
+
+[data-rbd-drag-handle-context-id="0"] > div > .MuiButtonBase-root.MuiCardActionArea-root {
+    width: 96px;
+    height: 54px;
+}
+[data-rbd-drag-handle-context-id="0"] > div > .MuiButtonBase-root.MuiCardActionArea-root > .MuiCardMedia-root {
+    width: 96px !important;
+    height: 54px !important;
+}
+
+.MuiTypography-caption.MuiTypography-noWrap {
+    font-size: 0.85rem;
+    max-width: 200px;
+    text-decoration: none;
+}
+
+[data-rbd-drag-handle-context-id="0"] > div > div:nth-child(2) {
+    display: grid;
+}
+
+.MuiPaper-root.MuiCard-root > div:nth-child(2) > div:nth-child(2) {
+    color: rgb(98, 98, 98);
+}
+
+
+/*******************
+シナリオテキスト
+********************/
+
+.MuiTypography-colorTextSecondary {
+    color: rgba(255, 255, 255, 0.35);
+    font-size: 0.75rem;
+}
+
+
+/*******************
+音量バー
+********************/
+
+div[tabindex="0"] > div:nth-child(3) > div > .MuiSlider-root {
+    width: 360px;
+}
+
