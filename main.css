@@ -35,8 +35,8 @@ div.MuiDialogContent-root > form > div:nth-child(n) > div.MuiToolbar-root.MuiToo
 シーン一覧
 ********************/
 
-[data-rbd-drag-handle-context-id="0"] > div > .MuiButtonBase-root.MuiCardActionArea-root ,
-[data-rbd-drag-handle-context-id="0"] > div > .MuiButtonBase-root.MuiCardActionArea-root > .MuiCardMedia-root {
+[data-rbd-drag-handle-context-id="0"] > div:nth-child(n) > button,
+[data-rbd-drag-handle-context-id="0"] > div:nth-child(n) > button > .MuiCardMedia-root {
     width: 96px !important;
     height: 54px !important;
 }
