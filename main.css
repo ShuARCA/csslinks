@@ -25,7 +25,7 @@ div.MuiDialogContent-root > form > div:nth-child(n) > div.MuiToolbar-root.MuiToo
     min-height: 0px;
     height: 10px;
 }
-.MuiDialog-paperFullWidth.MuiDialog-paperWidthSm > div.MuiDialogContent-root > form > div:nth-child(n) {
+div.MuiDialog-paperWidthSm > div.MuiDialogContent-root > form > div:nth-child(n) {
     margin-top: 0px;
     margin-bottom: 40px;
 }
