@@ -81,3 +81,11 @@ div[tabindex="0"] > div:nth-child(3) > div > .MuiSlider-root {
     width: var(--width);
 }
 
+
+/*******************
+画像選択ポップアップ
+********************/
+
+.MuiPaper-elevation24 > header > div:nth-child(2) > div.MuiTabs-scrollable  > div > button {
+    min-width: 125px;
+}
