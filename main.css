@@ -25,7 +25,7 @@ div.MuiDialogContent-root > form > div:nth-child(n) > div.MuiToolbar-root.MuiToo
     min-height: 0px;
     height: 10px;
 }
-div.MuiDialogContent-root > form > div:nth-child(n) {
+div.MuiDialog-paperFullWidth > div.MuiDialogContent-root > form > div:nth-child(n) {
     margin-top: 0px;
     margin-bottom: 40px;
 }
@@ -86,6 +86,6 @@ div[tabindex="0"] > div:nth-child(3) > div > .MuiSlider-root {
 画像選択ポップアップ
 ********************/
 
-.MuiPaper-elevation24 > header > div:nth-child(2) > div.MuiTabs-scrollable  > div > button {
+.MuiDialog-container > .MuiPaper-elevation24 > header > div:nth-child(2) > div.MuiTabs-scrollable  > div > button {
     min-width: 125px !important;
 }
