@@ -73,7 +73,11 @@ div.MuiDialogContent-root > form > div:nth-child(n) {
 音量バー
 ********************/
 
+:root {
+    --width: 360px;
+}
+
 div[tabindex="0"] > div:nth-child(3) > div > .MuiSlider-root {
-    width: 360px;
+    width: var(--width);
 }
 
