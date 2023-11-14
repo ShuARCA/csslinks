@@ -3,7 +3,7 @@
 ********************/
 
 /*チャパレ*/
-div.MuiDialogContent-root > form > div:nth-child(5) > div.MuiFormControl-root.MuiTextField-root.MuiFormControl-marginDense.MuiFormControl-fullWidth > div > textarea {
+div.MuiDialogContent-root > form > div:nth-child(5) > div.MuiFormControl-root .MuiFormControl-marginDense .MuiFormControl-fullWidth .MuiTextField-root > div > textarea {
     height: 400px;
 }
 /*説明文*/
@@ -11,7 +11,7 @@ div.MuiDialogContent-root > form > div:nth-child(n) > span {
     display: none;
 }
 /*キャラクターメモ*/
-div.MuiDialogContent-root > form > div:nth-child(1) > div.MuiFormControl-root.MuiTextField-root.MuiFormControl-marginDense.MuiFormControl-fullWidth > div > textarea {
+div.MuiDialogContent-root > form > div:nth-child(1) > div.MuiFormControl-root .MuiFormControl-marginDense .MuiFormControl-fullWidth .MuiTextField-root > div > textarea {
     height: 120px;
 }
 /*余白*/
