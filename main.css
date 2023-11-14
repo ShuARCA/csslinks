@@ -3,16 +3,16 @@
 ********************/
 
 /*チャパレ*/
-div.MuiDialogContent-root > form > div:nth-child(5) > div.MuiFormControl-root > div  {
-    height: 400px;
+div.MuiDialogContent-root > form > div:nth-child(5) > div.MuiFormControl-root > div > textarea {
+    height: 370px !important;
 }
 /*説明文*/
 div.MuiDialogContent-root > form > div:nth-child(n) > span {
     display: none;
 }
 /*キャラクターメモ*/
-div.MuiDialogContent-root > form > div:nth-child(1) > div.MuiFormControl-root > div {
-    height: 120px;
+div.MuiDialogContent-root > form > div:nth-child(1) > div.MuiFormControl-root > div > textarea {
+    height: 120px !important;
 }
 /*余白*/
 div.MuiDialogContent-root > form > div:nth-child(n+3):nth-child(-n+4) > div:nth-child(n) {
