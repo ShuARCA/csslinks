@@ -3,7 +3,7 @@
 ********************/
 
 /*チャパレ*/
-div.MuiDialogContent-root > form > div:nth-child(5) > div.MuiFormControl-root .MuiFormControl-marginDense .MuiFormControl-fullWidth .MuiTextField-root > div > textarea {
+div.MuiDialogContent-root > form > div:nth-child(5) > div.MuiFormControl-root > div  {
     height: 400px;
 }
 /*説明文*/
@@ -11,7 +11,7 @@ div.MuiDialogContent-root > form > div:nth-child(n) > span {
     display: none;
 }
 /*キャラクターメモ*/
-div.MuiDialogContent-root > form > div:nth-child(1) > div.MuiFormControl-root .MuiFormControl-marginDense .MuiFormControl-fullWidth .MuiTextField-root > div > textarea {
+div.MuiDialogContent-root > form > div:nth-child(1) > div.MuiFormControl-root > div {
     height: 120px;
 }
 /*余白*/
@@ -35,8 +35,8 @@ div.MuiDialogContent-root > form > div:nth-child(n) > div.MuiToolbar-root.MuiToo
 シーン一覧
 ********************/
 
-[data-rbd-drag-handle-context-id="0"] > div:nth-child(n) > button,
-[data-rbd-drag-handle-context-id="0"] > div:nth-child(n) > button > .MuiCardMedia-root {
+[data-rbd-drag-handle-context-id="5"] > div:nth-child(n) > button,
+[data-rbd-drag-handle-context-id="5"] > div:nth-child(n) > button > .MuiCardMedia-root {
     width: 96px !important;
     height: 54px !important;
 }
@@ -47,7 +47,7 @@ div.MuiDialogContent-root > form > div:nth-child(n) > div.MuiToolbar-root.MuiToo
     text-decoration: none;
 }
 
-[data-rbd-drag-handle-context-id="0"] > div > div:nth-child(2) {
+[data-rbd-drag-handle-context-id="5"] > div > div:nth-child(2) {
     display: grid;
 }
 
@@ -60,7 +60,7 @@ div.MuiDialogContent-root > form > div:nth-child(n) > div.MuiToolbar-root.MuiToo
 シナリオテキスト
 ********************/
 
-.MuiDialogContent-root > .MuiListItemText-secondary {
+div.MuiListItemText-dense > .MuiListItemText-secondary {
     color: rgba(255, 255, 255, 0.35);
     font-size: 0.75rem;
 }
