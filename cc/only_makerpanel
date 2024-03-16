@@ -1,0 +1,22 @@
+.MuiDialog-root{
+  display: none;
+}
+div[tabindex="0"]{
+  position:static;
+}
+
+/*すべての要素を非表示、背景透過*/
+body{
+  visibility: hidden;
+  background-color: rgba(0,0,0,0);
+}
+
+/*マーカー・スクリーンパネルを表示*/
+div[class="movable react-draggable"]{
+	visibility: visible !important;
+}
+
+/*スクリーンパネルのみ非表示*/
+div[class="movable react-draggable"] > div > img[alt] {
+	visibility: hidden !important;
+}
