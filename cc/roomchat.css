@@ -1,0 +1,243 @@
+/***********************************************************/
+
+/*フォントカラー変更*/
+/*チャット*/
+.MuiTypography-colorTextPrimary, .MuiTypography-colorTextSecondary {
+    color: var(--fontcolor) !important;
+}
+/*ウインドウ*/
+div[tabindex="0"] > div:nth-child(6) .MuiTypography-subtitle2, .MuiTypography-body1 {
+    color: var(--fontcolor) !important;
+}
+
+/*チャット背景色変更*/
+.MuiListItem-root {
+    background-color: var(--bgcolor);
+    /* 標準色: rgba(20,20,20,0.92); */
+}
+
+/*---------------------------------------------------------*/
+
+/*
+    ■ルームチャット設定
+    ￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣
+    ・カラーコード： #------
+    ・RGB＋透明度 ： rgba(--,--,--,--)
+    で設定
+*/
+:root {
+
+    /*文字色 | デフォルト：rgb(255, 255, 255)*/
+    --fontcolor: rgb(255, 255, 255);
+
+    /*背景色 | デフォルト：rgba(44, 44, 44, 0.87)*/
+    --bgcolor: rgba(44, 44, 44, 0.87);
+
+}
+
+/***********************************************************/
+
+/*
+    様々なモノを非表示
+-----------------------------------------------------------*/
+
+/*ロード時のポップアップ*/
+.MuiDialog-root {
+    display: none;
+}
+
+/*背景透過*/
+body {
+    background: #fff0;
+}
+
+/*ヘッダー*/
+header > .MuiToolbar-gutters,
+/*背景*/
+body > div > div > div:nth-child(2),
+/*盤面画像一括*/
+div[tabindex="0"] > div:nth-child(1),
+/*BGM*/
+div[tabindex="0"] > div:nth-child(3),
+button.MuiButtonBase-root:not(.MuiTab-root),
+/*拡大縮小*/
+button.MuiButtonBase-root + span,
+/*メニューボタン*/
+.MuiFab-root,
+/*ステータス*/
+.MuiBadge-root, .MuiBadge-root + div,
+/*カットイン*/
+div[open],
+/*カットイン音声*/
+.MuiSnackbar-root,
+/*キャラクター名前*/
+.MuiTypography-caption {
+    display: none;
+}
+/*スクロールバー*/
+::-webkit-scrollbar {
+    display: none !important;
+}
+/*テキストウィンドウ*/
+div[tabindex="0"] > div:nth-child(6) {
+    display: none;
+}
+
+
+
+/*
+    フォント
+-----------------------------------------------------------*/
+
+/*全体*/
+.MuiTypography-body1, .MuiTypography-body2, .MuiTypography-subtitle2 {
+    font-family: "Montserrat","游ゴシック",YuGothic,"ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN","メイリオ",Meiryo,sans-serif;
+    font-weight: 500;
+}
+/*チャット名前*/
+.MuiTypography-subtitle2 {
+    font-weight: bold;
+    line-height: 1.39;
+}
+/*チャット本文*/
+.MuiTypography-body2 {
+    font-weight: 500;
+    font-size: 0.8rem;
+}
+/*ウインドウ成功失敗*/
+div[tabindex="0"] > div:nth-child(6) > div > div:nth-child(2) > .MuiTypography-body2 {
+    font-weight: bold;
+    line-height: 1.39;
+    font-size: 0.875rem;
+}
+/*ウインドウ名前*/
+div[tabindex="0"] > div:nth-child(6) > div > div:nth-child(2) > .MuiTypography-subtitle2 {
+    font-weight: bold;
+    line-height: 1.39;
+    font-size: 1rem;
+}
+/*ウインドウ本文*/
+.MuiTypography-body1 {
+    font-weight: 500;
+    font-size: 0.90rem;
+}
+
+
+
+/*
+    ルームチャット
+-----------------------------------------------------------*/
+
+/*ルームチャット全体の設定*/
+.MuiDrawer-paperAnchorRight {
+    position: absolute;
+    left: 85px;
+    top: 151px;
+    background: rgba(0,0,0,0);
+    height: 610px;
+    transform: scale(1.5);
+    width: 400px !important;
+}
+
+/*要素の非表示*/
+/*チャットタブ左の枠線*/
+.MuiDrawer-paperAnchorDockedRight {
+    border: 0px solid rgba(0,0,0,0);
+}
+/*ルームチャット下部*/
+form > div:nth-child(n),
+/*ルームチャット区切り線*/
+.MuiDivider-root,
+/*ルームチャット時刻*/
+.MuiTypography-caption {
+    display: none;
+}
+
+/*アニメーション*/
+/*チャット*/
+.MuiListItem-gutters {
+    opacity: 0;
+    animation: inAndOut 12s;
+    transition: none;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,0);
+    overflow: hidden;
+}
+
+@keyframes inAndOut {
+    0% {
+        transform: translateX(-70px);
+        opacity: 0;
+    }
+    8% {
+        opacity: 1;
+    }
+    10% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    85% {
+        opacity: 1;
+        left: 0%;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+/*アイコンとテキストの距離*/
+.MuiListItemAvatar-root {
+    min-width: 10px;
+}
+
+/*テキストをアイコンより上に*/
+.MuiListItemText-multiline {
+    margin-top: 6px;
+    margin-bottom: 6px;
+    z-index: 1;
+}
+
+/*アイコンの表示位置設定*/
+.MuiListItemAvatar-alignItemsFlexStart {
+    margin-top: -30px;
+}
+
+.MuiListItem-root > div:nth-child(1) > div  {
+    background: rgba(0, 0, 0, 0);
+    width: 10px;
+    height: 40px;
+    overflow: visible;
+}
+
+.MuiListItem-root > div:nth-child(1) > div img {
+    margin-left: 240px;
+    width: 150px;
+    opacity: 0.5;
+}
+
+
+
+/*
+    ルームチャット タブ表示
+-----------------------------------------------------------*/
+
+/*ルームチャット下部の非表示*/
+.MuiDrawer-paperAnchorRight > div:nth-child(2) > div:nth-child(2) > form > div {
+    display: none;
+}
+
+/*タブメニューの表示固定*/
+.MuiTab-wrapper > .MuiBadge-root {
+    display: block !important;
+}
+/*タブ名称の表示固定*/
+header .MuiBadge-root {
+    display: block !important;
+}
+.MuiTabs-scroller > span {
+    transform: scale(0.66) !important;
+}
+
+/***********************************************************/
