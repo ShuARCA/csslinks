@@ -1,0 +1,13 @@
+/*========================================*
+前景を表示しているブラウザのCSSに追加で適用
+ *========================================*/
+
+/*マーカー・スクリーンパネルを非表示*/
+div[class="movable react-draggable"] {
+	visibility: hidden !important;
+}
+
+/*スクリーンパネルのみ表示*/
+div[class="movable react-draggable"] > div > img[alt] {
+	visibility: visible !important;
+}
