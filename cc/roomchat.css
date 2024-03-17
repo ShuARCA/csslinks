@@ -1,19 +1,13 @@
 /***********************************************************/
 
-/*フォントカラー変更*/
-/*チャット*/
+/*チャットカラー変更*/
 .MuiTypography-colorTextPrimary, .MuiTypography-colorTextSecondary {
-    color: var(--fontcolor) !important;
-}
-/*ウインドウ*/
-div[tabindex="0"] > div:nth-child(6) .MuiTypography-subtitle2, .MuiTypography-body1 {
     color: var(--fontcolor) !important;
 }
 
 /*チャット背景色変更*/
 .MuiListItem-root {
     background-color: var(--bgcolor);
-    /* 標準色: rgba(20,20,20,0.92); */
 }
 
 /*---------------------------------------------------------*/
@@ -104,24 +98,6 @@ div[tabindex="0"] > div:nth-child(6) {
     font-weight: 500;
     font-size: 0.8rem;
 }
-/*ウインドウ成功失敗*/
-div[tabindex="0"] > div:nth-child(6) > div > div:nth-child(2) > .MuiTypography-body2 {
-    font-weight: bold;
-    line-height: 1.39;
-    font-size: 0.875rem;
-}
-/*ウインドウ名前*/
-div[tabindex="0"] > div:nth-child(6) > div > div:nth-child(2) > .MuiTypography-subtitle2 {
-    font-weight: bold;
-    line-height: 1.39;
-    font-size: 1rem;
-}
-/*ウインドウ本文*/
-.MuiTypography-body1 {
-    font-weight: 500;
-    font-size: 0.90rem;
-}
-
 
 
 /*
