@@ -1,0 +1,162 @@
+/***********************************************************/
+
+/*フォントカラー変更*/
+/*ウインドウ*/
+div[tabindex="0"] > div:nth-child(6) .MuiTypography-subtitle2, .MuiTypography-body1 {
+    color: var(--fontcolor) !important;
+}
+
+/*テキスト表示位置*/
+div[tabindex="0"] > div:nth-child(6) {
+    max-width: var(--window_width) !important; /* ウインドウの幅 */
+    height: var(--window_height) !important; /* ウインドウの高さ */
+}
+
+/*---------------------------------------------------------*/
+
+/*
+    ■テキストウインドウ設定
+    ￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣
+    文字色
+    ・カラーコード： #------
+    ・RGB＋透明度 ： rgba(--,--,--,--)
+    幅、高さ
+    ・--px
+    で指定
+*/
+:root {
+    /*文字色 | デフォルト：rgb(255, 255, 255)*/
+    --fontcolor: rgb(255, 255, 255);
+    
+    /*ウインドウ幅 | デフォルト：680px*/
+    --window_width: 680px;
+
+    /*ウインドウ高さ | デフォルト：210px*/
+    --window_height: 210px;
+}
+
+/***********************************************************/
+
+
+/*
+    様々なモノを非表示
+-----------------------------------------------------------*/
+
+/*ロード時のポップアップ*/
+.MuiDialog-root {
+    display: none;
+}
+
+/*背景透過*/
+body {
+    background: #fff0;
+}
+
+/*ヘッダー*/
+header > .MuiToolbar-gutters,
+/*背景*/
+body > div > div > div:nth-child(2),
+/*盤面画像一括*/
+div[tabindex="0"] > div:nth-child(1),
+/*BGM*/
+div[tabindex="0"] > div:nth-child(3),
+button.MuiButtonBase-root:not(.MuiTab-root),
+/*拡大縮小*/
+button.MuiButtonBase-root + span,
+/*メニューボタン*/
+.MuiFab-root,
+/*ステータス*/
+.MuiBadge-root, .MuiBadge-root + div,
+/*カットイン*/
+div[open],
+/*カットイン音声*/
+.MuiSnackbar-root,
+/*キャラクター名前*/
+.MuiTypography-caption {
+    display: none;
+}
+/*スクロールバー*/
+::-webkit-scrollbar {
+    display: none !important;
+}
+/*ルームチャット*/
+.MuiDrawer-paperAnchorRight {
+    display: none;
+}
+
+
+
+/*
+    フォント
+-----------------------------------------------------------*/
+
+/*全体*/
+.MuiTypography-body1, .MuiTypography-body2, .MuiTypography-subtitle2 {
+    font-family: "Montserrat","游ゴシック",YuGothic,"ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN","メイリオ",Meiryo,sans-serif;
+    font-weight: 500;
+}
+/*ウインドウ成功失敗*/
+div[tabindex="0"] > div:nth-child(6) > div > div:nth-child(2) > .MuiTypography-body2 {
+    font-weight: bold;
+    line-height: 1.39;
+    font-size: 0.875rem;
+}
+/*ウインドウ名前*/
+div[tabindex="0"] > div:nth-child(6) > div > div:nth-child(2) > .MuiTypography-subtitle2 {
+    font-weight: bold;
+    line-height: 1.39;
+    font-size: 1rem;
+}
+/*ウインドウ本文*/
+.MuiTypography-body1 {
+    font-weight: 500;
+    font-size: 0.90rem;
+}
+
+
+
+/*
+    テキストウインドウ
+-----------------------------------------------------------*/
+
+/*テキスト表示位置*/
+div[tabindex="0"] > div:nth-child(6) {
+    margin-left: 340px; /* 左からの距離 */
+    bottom: 15px; /* 下からの距離 */
+}
+
+/*キャラクター非表示*/
+.MuiPaper-root > img {
+    visibility: hidden;
+}
+
+.MuiPaper-root {
+    background-color: rgba(0, 0, 0, 0);
+    box-shadow: none;
+    background-image: none;
+}
+
+/*ダイス*/
+div[tabindex="0"] > div:nth-child(6) > div > div:nth-child(1) {
+    right: -120px; /* 右からの距離 */
+    bottom: 0px; /* 下からの距離 */
+    transform: scale(1.25); /* 大きさ */
+}
+
+/*上段(キャラクター名)*/ 
+div[tabindex="0"] > div:nth-child(6) > div > div:nth-child(2) {
+    transform: scale(1.5);
+}
+
+/*スキップ・閉じる*/
+.MuiIconButton-edgeEnd {
+    display: none;
+}
+
+/*下段(テキスト)*/
+div[tabindex="0"] > div:nth-child(6) > div > div:nth-child(3) {
+    margin-top: 42px; /* 上段との距離 */
+    left: 60px; /* 左位置 */
+    height: 90px; /* 下段の高さ */
+    transform: scale(1.5);
+}
