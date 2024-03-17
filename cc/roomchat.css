@@ -213,7 +213,7 @@ header .MuiBadge-root {
     display: block !important;
 }
 .MuiTabs-scroller > span {
-    transform: scale(0.66) !important;
+    display:none;
 }
 
 /***********************************************************/

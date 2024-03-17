@@ -33,6 +33,10 @@ div[variant="bar"] > div:nth-child(n+4) {
     URL   https://ccfolia.com/rooms/{ルームID}/characters/{キャラクターID}
     幅    1920
     高さ  1080
+    ------
+    文字色
+    ・カラーコード： #------
+    ・RGB    ： rgb(--,--,--)
 */
 :root {
     /* 文字色 | デフォルト：rgb(66, 66, 66) */

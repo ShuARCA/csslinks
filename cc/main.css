@@ -1,0 +1,98 @@
+/***********************************************************/
+
+/*前景*/
+.cTrKpP > div:nth-child(1) > div:nth-child(1) {
+    opacity: var(--foreground) !important;
+}
+
+/*キャラクター画像*/
+figure {
+    opacity: var(--character_img) !important;
+}
+/*キャラクター名前*/
+.MuiTypography-caption {
+    opacity: var(--character_name) !important;
+}
+
+/*---------------------------------------------------------*/
+/*
+    ■盤面設定
+    ￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣
+    ・表示　 ： 1
+    ・非表示 ： 0
+    で設定
+*/
+:root {
+    /*前景*/
+    --foreground: 1;
+    /*キャラ画像*/
+    --character_img: 1;
+    /*キャラ名前*/
+    --character_name: 1;
+}
+
+/*画像を個別に非表示*/
+img[src="画像のURL"],
+img[src="画像のURL"] {
+display: none;
+}
+
+
+
+/***********************************************************/
+
+
+/*
+    様々なモノを非表示
+-----------------------------------------------------------*/
+
+/*ロード時のポップアップ*/
+.MuiDialog-root {
+    display: none;
+}
+
+/*盤面全体のcss 中央固定+ルームチャット非表示*/
+#root > div > div {
+    position: static;
+}
+
+/*ヘッダー*/
+header > .MuiToolbar-gutters,
+/*BGM*/
+div[tabindex="0"] > div:nth-child(3),
+/*拡大縮小*/
+button.MuiButtonBase-root,
+button.MuiButtonBase-root + span,
+/* メニューボタン */
+.MuiFab-root,
+/*ステータス*/
+.MuiBadge-root, .MuiBadge-root + div,
+/*カットイン音声*/
+.MuiSnackbar-root,
+/*ルームチャット*/
+.MuiDrawer-paperAnchorRight,
+/*テキストウィンドウ*/
+div[tabindex="0"] > div:nth-child(6) /*,
+キャラクター名前
+ */ {
+    display: none;
+}
+
+
+/*カットイン*/
+/*画像 | 通常サイズで表示したい時はコメントアウト*/
+/*div[open]>div {
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    max-width: none;
+    max-height: none;
+}*/
+/*全体*/
+div[open] {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+/***********************************************************/
