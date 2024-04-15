@@ -128,6 +128,10 @@ form > div:nth-child(n),
 .MuiTypography-caption {
     display: none;
 }
+/*ルームチャット下部box-shadowの非表示*/
+.MuiDrawer-paperAnchorRight > div:nth-child(2) > div:nth-child(2) {
+    box-shadow: none;
+}
 
 /*アニメーション*/
 /*チャット*/
