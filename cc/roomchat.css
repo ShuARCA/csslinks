@@ -129,9 +129,13 @@ form > div:nth-child(n),
     display: none;
 }
 /*ルームチャット下部box-shadowの非表示*/
-.MuiDrawer-paperAnchorRight > div:nth-child(2) > div:nth-child(2) {
-    box-shadow: none;
+.MuiDrawer-paperAnchorRight > div ,
+.MuiDrawer-paperAnchorRight > div > form,
+.MuiDrawer-paperAnchorRight > div > form > header {
+    box-shadow: none !important;
+    background-color: rgba(0,0,0,0)!important;
 }
+
 
 /*アニメーション*/
 /*チャット*/
