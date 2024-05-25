@@ -87,3 +87,16 @@ div[tabindex="0"] > div:nth-child(3) > div > .MuiSlider-root {
 .MuiDialog-container > .MuiPaper-elevation24 > header > div:nth-child(2) > div.MuiTabs-scrollable  > div > button {
     min-width: 125px !important;
 }
+
+/*******************
+bgm選択画面
+********************/
+div[role="presentation"] > div.MuiPaper-elevation16 {
+        height: 90%;
+}
+[data-rbd-draggable-context-id="9"] > li > div {
+    padding: 4px 4px 4px 12px;
+}
+[data-rbd-draggable-context-id="9"] > li > div >div.MuiListItemAvatar-root {
+    scale: 90%;
+}
