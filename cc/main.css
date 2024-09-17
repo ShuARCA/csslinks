@@ -1,7 +1,7 @@
 /***********************************************************/
 
 /*前景*/
-[style^="transform: translate"] > [style^="transform: scale"] > div:nth-child(1) {
+div[tabindex="0"] > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1){
     opacity: var(--foreground) !important;
 }
 
