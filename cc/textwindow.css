@@ -2,12 +2,12 @@
 
 /*フォントカラー変更*/
 /*ウインドウ*/
-div[tabindex="0"] > div:nth-child(6) .MuiTypography-subtitle2, .MuiTypography-body1 {
+div[tabindex="0"] > div:nth-child(8) .MuiTypography-subtitle2, .MuiTypography-body1 {
     color: var(--fontcolor) !important;
 }
 
 /*テキスト表示位置*/
-div[tabindex="0"] > div:nth-child(6) {
+div[tabindex="0"] > div:nth-child(8) {
     max-width: var(--window_width) !important; /* ウインドウの幅 */
     height: var(--window_height) !important; /* ウインドウの高さ */
 }
@@ -96,13 +96,13 @@ div[open],
     font-weight: 500;
 }
 /*ウインドウ成功失敗*/
-div[tabindex="0"] > div:nth-child(6) > div > div:nth-child(2) > .MuiTypography-body2 {
+div[tabindex="0"] > div:nth-child(8) > div > div:nth-child(2) > .MuiTypography-body2 {
     font-weight: bold;
     line-height: 1.39;
     font-size: 0.875rem;
 }
 /*ウインドウ名前*/
-div[tabindex="0"] > div:nth-child(6) > div > div:nth-child(2) > .MuiTypography-subtitle2 {
+div[tabindex="0"] > div:nth-child(8) > div > div:nth-child(2) > .MuiTypography-subtitle2 {
     font-weight: bold;
     line-height: 1.39;
     font-size: 1rem;
@@ -120,7 +120,7 @@ div[tabindex="0"] > div:nth-child(6) > div > div:nth-child(2) > .MuiTypography-s
 -----------------------------------------------------------*/
 
 /*テキスト表示位置*/
-div[tabindex="0"] > div:nth-child(6) {
+div[tabindex="0"] > div:nth-child(8) {
     margin-left: 340px; /* 左からの距離 */
     bottom: 15px; /* 下からの距離 */
 }
@@ -137,14 +137,14 @@ div[tabindex="0"] > div:nth-child(6) {
 }
 
 /*ダイス*/
-div[tabindex="0"] > div:nth-child(6) > div > div:nth-child(1) {
+div[tabindex="0"] > div:nth-child(8) > div > div:nth-child(1) {
     right: -120px; /* 右からの距離 */
     bottom: 0px; /* 下からの距離 */
     transform: scale(1.25); /* 大きさ */
 }
 
 /*上段(キャラクター名)*/ 
-div[tabindex="0"] > div:nth-child(6) > div > div:nth-child(2) {
+div[tabindex="0"] > div:nth-child(8) > div > div:nth-child(2) {
     transform: scale(1.5);
 }
 
@@ -154,7 +154,7 @@ div[tabindex="0"] > div:nth-child(6) > div > div:nth-child(2) {
 }
 
 /*下段(テキスト)*/
-div[tabindex="0"] > div:nth-child(6) > div > div:nth-child(3) {
+div[tabindex="0"] > div:nth-child(8) > div > div:nth-child(3) {
     margin-top: 42px; /* 上段との距離 */
     left: 60px; /* 左位置 */
     height: 90px; /* 下段の高さ */
