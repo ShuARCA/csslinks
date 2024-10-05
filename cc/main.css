@@ -72,7 +72,7 @@ button.MuiButtonBase-root + span,
 /*ルームチャット*/
 .MuiDrawer-paperAnchorRight,
 /*テキストウィンドウ*/
-.MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation6 /*,
+div[tabindex="0"] > .MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation6 /*,
 キャラクター名前
  */ {
     display: none;
