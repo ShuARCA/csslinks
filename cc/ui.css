@@ -35,26 +35,34 @@ div.MuiDialogContent-root > form > div:nth-child(n) > div.MuiToolbar-root.MuiToo
 シーン一覧
 ********************/
 
-[data-rbd-droppable-id="droppable"] > div > div:nth-child(n) > button,
-[data-rbd-droppable-id="droppable"] > div > div:nth-child(n) > button > .MuiCardMedia-root {
-    width: 96px !important;
+[aria-roledescription="sortable"] > div > button,
+[aria-roledescription="sortable"] > div > button > .MuiCardMedia-root {
+    width: 80px !important;
     height: 54px !important;
 }
 
-.MuiTypography-caption.MuiTypography-noWrap {
-    font-size: 0.85rem;
-    max-width: 200px;
+.MuiPaper-root.MuiCard-root > div:nth-child(2) {
+    padding: 3px 0px 3px 6px;
+}
+.MuiPaper-root.MuiCard-root > div:nth-child(2)  > div:nth-child(1) > span:nth-child(1) {
+    font-size: 0.8rem;
+    max-width: 1000px;
     text-decoration: none;
 }
-
-[data-rbd-droppable-id="droppable"] > div > div > div:nth-child(2) {
-    display: grid;
+.MuiPaper-root.MuiCard-root > div:nth-child(2)  > div:nth-child(1) > span:nth-child(2) {
+    font-size: 0.75rem;
+    max-width: 1000px;
+    text-decoration: none;
+    color: rgb(125, 125, 125);
 }
 
 .MuiPaper-root.MuiCard-root > div:nth-child(2) > div:nth-child(2) {
+    margin-right: 4px;
     color: rgb(98, 98, 98);
 }
-
+.MuiPaper-root.MuiCard-root > div:nth-child(2) > div:nth-child(2) > button {
+    width: 22px;
+}
 
 
 /*******************
@@ -92,11 +100,23 @@ div[tabindex="0"] > div:nth-child(3) > div > .MuiSlider-root {
 bgm選択画面
 ********************/
 div[role="presentation"] > div.MuiPaper-elevation16 {
-        height: 90%;
+    height: 90%;
 }
-[data-rbd-draggable-context-id="9"] > li > div {
-    padding: 4px 4px 4px 12px;
+[aria-roledescription="sortable"] > li > div:nth-child(1) {
+    padding: 5px 8px 5px 12px;
 }
-[data-rbd-draggable-context-id="9"] > li > div >div.MuiListItemAvatar-root {
-    scale: 90%;
+[aria-roledescription="sortable"]> li > div:nth-child(1) > div.MuiListItemAvatar-root {
+    min-width: 50px;
+    scale: 95%;
+}
+/*スクリーンパネルの文字が重なりを解消*/
+[aria-roledescription="sortable"] > li > div:nth-child(1) > div:nth-child(2) > span {
+    width: 80%;
+}
+
+/*******************
+スクロールバー
+********************/
+body {
+  scrollbar-color: #686868 #424242;
 }
