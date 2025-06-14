@@ -1,36 +1,3 @@
-/***********************************************************/
-
-/*チャットカラー変更*/
-.MuiTypography-colorTextPrimary, .MuiTypography-colorTextSecondary {
-    color: var(--fontcolor) !important;
-}
-
-/*チャット背景色変更*/
-.MuiListItem-root {
-    background-color: var(--bgcolor);
-}
-
-/*---------------------------------------------------------*/
-
-/*
-    ■ルームチャット設定
-    ￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣
-    ・カラーコード： #------
-    ・RGB＋透明度 ： rgba(--,--,--,--)
-    で設定
-*/
-:root {
-
-    /*文字色 | デフォルト：rgb(255, 255, 255)*/
-    --fontcolor: rgb(255, 255, 255);
-
-    /*背景色 | デフォルト：rgba(44, 44, 44, 0.87)*/
-    --bgcolor: rgba(44, 44, 44, 0.87);
-
-}
-
-/***********************************************************/
-
 /*
     様々なモノを非表示
 -----------------------------------------------------------*/
@@ -112,7 +79,6 @@ div[tabindex="0"] > .MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-
     background: rgba(0,0,0,0);
     height: 610px;
     transform: scale(1.5);
-    width: 400px !important;
 }
 
 /*要素の非表示*/
@@ -136,39 +102,11 @@ form > div:nth-child(n),
     background-color: rgba(0,0,0,0)!important;
 }
 
-
-/*アニメーション*/
 /*チャット*/
 .MuiListItem-gutters {
-    opacity: 0;
-    animation: inAndOut 12s;
-    transition: none;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
     background-clip: padding-box;
     border: 1px solid rgba(0,0,0,0);
     overflow: hidden;
-}
-
-@keyframes inAndOut {
-    0% {
-        transform: translateX(-70px);
-        opacity: 0;
-    }
-    8% {
-        opacity: 1;
-    }
-    10% {
-        opacity: 1;
-        transform: translateX(0);
-    }
-    85% {
-        opacity: 1;
-        left: 0%;
-    }
-    100% {
-        opacity: 0;
-    }
 }
 
 /*アイコンとテキストの距離*/
@@ -196,7 +134,6 @@ form > div:nth-child(n),
 }
 
 .MuiListItem-root > div:nth-child(1) > div img {
-    margin-left: 240px;
     width: 150px;
     opacity: 0.5;
 }
