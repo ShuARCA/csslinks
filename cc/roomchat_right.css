@@ -1,0 +1,103 @@
+@import url("https://shuarca.github.io/csslinks/cc/roomchat.css");
+
+/***********************************************************/
+
+/*チャットカラー変更*/
+/*本文*/
+.MuiTypography-body2 {
+    color: var(--font-color);
+}
+/*ダイス成功*/
+.css-1l6qhgm {
+    color: var(--success-color);
+}
+/*ダイス失敗*/
+.css-1j13mke {
+    color: var(--failure-color);
+}
+
+/*チャット背景色変更*/
+.MuiListItem-root {
+    background-color: var(--bgcolor);
+}
+
+/*チャット幅変更*/
+.MuiDrawer-paperAnchorRight {
+    width: var(--width)!important;
+}
+/*アイコン表示位置*/
+.MuiListItem-root > div:nth-child(1) > div img {
+    margin-left:  var(--margin-left);
+}
+/*---------------------------------------------------------*/
+
+/*
+    ■ルームチャット設定
+    ￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣
+    ・カラーコード： #------
+    ・RGB＋透明度 ： rgba(--,--,--,--)
+    で設定
+*/
+:root {
+
+    /*文字色*/
+    /* 名前       | デフォルト：_(blank)*/
+    --name-color: ;
+    /* 本文       | デフォルト：rgb(255, 255, 255)*/
+    --font-color:    rgb(255, 255, 255);
+    /* ダイス成功 | デフォルト：rgb(33, 150, 243)*/
+    --success-color: rgb(33, 150, 243);
+    /* ダイス失敗 | デフォルト：rgb(245, 0, 87)*/
+    --failure-color: rgb(245, 0, 87);
+
+    /* 背景色 | デフォルト：rgba(44, 44, 44, 0.87)*/
+    --bgcolor: rgba(44, 44, 44, 0.87);
+
+    /*チャット幅 | デフォルト：400px*/
+    --width: 400px;
+    /*アイコン表示位置 | デフォルト：240px*/
+    --margin-left: 240px;
+}
+/*　名前の色を変更しない時は下をコメントアウト　*/
+/*.MuiTypography-subtitle2 {
+    color: var(--name-color)!important;
+}*/
+
+
+/***********************************************************/
+
+/*ルームチャット全体の設定*/
+.MuiDrawer-paperAnchorRight {
+    left: 1440px;
+}
+
+/*アニメーション*/
+/*チャット*/
+.MuiListItem-gutters {
+    opacity: 0;
+    animation: inAndOut 12s;
+    transition: none;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+@keyframes inAndOut {
+    0% {
+        transform: translateX(70px);
+        opacity: 0;
+    }
+    8% {
+        opacity: 1;
+    }
+    10% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    85% {
+        opacity: 1;
+        left: 0%;
+    }
+    100% {
+        opacity: 0;
+    }
+}
