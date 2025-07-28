@@ -63,7 +63,10 @@ div.MuiDialogContent-root > form > div:nth-child(n) > div.MuiToolbar-root.MuiToo
 .MuiPaper-root.MuiCard-root > div:nth-child(2) > div:nth-child(2) > button {
     width: 22px;
 }
-
+/*シーン切り替えメッセージ*/
+.MuiDialog-container > .MuiPaper-elevation24 > form > div:nth-child(2) > div > textarea {
+    height: 240px !important;
+}
 
 /*******************
 シナリオテキスト
