@@ -12,11 +12,11 @@ body{
 }
 
 /*マーカー・スクリーンパネルを表示*/
-div[class="movable react-draggable"]{
+div[class="movable"]{
 	visibility: visible !important;
 }
 
 /*スクリーンパネルのみ非表示*/
-div[class="movable react-draggable"] > div > img[alt] {
+div[class="movable"] > div > div > img[alt] {
 	visibility: hidden !important;
 }
